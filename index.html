@@ -4,5 +4,13 @@ title: Neural Pineapple, Dev Log
 ---
 <div class="blurb">
 	<h1>Neural Pineapple</h1>
-	<h2>Dev Log</h2>
+	<h2>Dev Log and Income Reports</h2>
+	<hr />
+	<ul>
+		{% for post in site.posts %}
+			<li>
+				<a href="{{ post.url }}">{{post.title}}</a>
+			</li>
+		{% endfor %}
+	</ul>
 </div>
